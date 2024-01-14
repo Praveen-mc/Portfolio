@@ -1,0 +1,205 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .transparent-header {
+    /* position: fixed; */
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  nav {
+    background-color: #444;
+    padding: 10px;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  nav a:hover {
+    color: #ffd700;
+  }
+  
+  section {
+    padding: 20px;
+  }
+  
+  section h2 {
+    color: #333;
+  }
+  
+  /* Add styles for projects, contact, etc. as needed */
+  
+  /* Parallax effect for header background */
+  header {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  /* Smooth scrolling effect for anchor links */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Fade-in animation for sections */
+  section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+  }
+  
+  section.in-view {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Add more animations and transitions as needed */
+  .parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  header {
+    position: relative;
+  }
+  
+  header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adjust the overlay color and opacity */
+  }
+  
+  header .container {
+    position: relative;
+    z-index: 1;
+  }
+  
+  [data-aos] {
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+  }
+  
+  [data-aos].aos-animate {
+    opacity: 1;
+  }
+
+  .navbar {
+    height: 36px; /* Adjust the height as needed */
+  }
+
+  .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .skill {
+    width: 30%; /* Adjust the width as needed */
+    margin: 10px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.5s;
+  }
+
+  .skill:hover {
+    transform: scale(1.1);
+  }
+
+  .skill-icon {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #3498db;
+  }
+
+  .language-icon {
+    font-size: 1.5rem;
+    color: #3498db;
+    margin-top: 5px;
+    margin-bottom: 5px; /* Added margin-bottom for spacing */
+  }
+
+  .skill-name {
+    color: #333;
+    font-weight: bold;
+    margin-top: 5px; /* Added margin-top for spacing */
+  }
+
+  section {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    padding-top: 45%; /* Adjust based on the desired aspect ratio (in this case, 9/16 * 100) */
+    margin-bottom: 20px; /* Add space between sections */
+    border-radius: 15px;
+  }
+  
+  
+
+
+  #about {
+    background-image: url('about.jpg'); 
+    /* background-color: rgba(255, 255, 255, 0.9); */
+  }
+
+  #projects {
+    background-image: url('project.jpg'); /* Replace with your image URL */
+    /* background-color: rgba(255, 255, 255, 0.9); */
+  }
+
+  #skills {
+    background-image: url('skills.jpg'); /* Replace with your image URL */
+    /* background-color: rgba(255, 255, 255, 0.9); */
+  }
+
+  #education {
+    background-image: url('education.jpg'); /* Replace with your image URL */
+    /* background-color: rgba(255, 255, 255, 0.9); */
+  }
+
+  #contact {
+    background-image: url('contact.jpg'); /* Replace with your image URL */
+    /* background-color: rgba(255, 255, 255, 0.9); */
+  }
+
+  .transparent-container {
+    background-color: rgba(255, 255, 255, 0.8); /* Adjust the last value for transparency (0 fully transparent, 1 fully opaque) */
+    padding: 20px;
+    border-radius: 10px;
+  }
