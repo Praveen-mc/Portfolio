@@ -1,3 +1,8 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -174,27 +179,27 @@ body {
 
 
   #about {
-    background-image: url('about.jpg'); 
+    background-image: url('./assets/about.jpg'); 
     /* background-color: rgba(255, 255, 255, 0.9); */
   }
 
   #projects {
-    background-image: url('project.jpg'); /* Replace with your image URL */
+    background-image: url('./assets/project.jpg'); /* Replace with your image URL */
     /* background-color: rgba(255, 255, 255, 0.9); */
   }
 
   #skills {
-    background-image: url('skills.jpg'); /* Replace with your image URL */
+    background-image: url('./assets/skills.jpg'); /* Replace with your image URL */
     /* background-color: rgba(255, 255, 255, 0.9); */
   }
 
   #education {
-    background-image: url('education.jpg'); /* Replace with your image URL */
+    background-image: url('./assets/education.jpg'); /* Replace with your image URL */
     /* background-color: rgba(255, 255, 255, 0.9); */
   }
 
   #contact {
-    background-image: url('contact.jpg'); /* Replace with your image URL */
+    background-image: url('./assets/contact.jpg'); /* Replace with your image URL */
     /* background-color: rgba(255, 255, 255, 0.9); */
   }
 
